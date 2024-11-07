@@ -6,7 +6,7 @@ def update(no_buku, date_add, tahun, judul, penulis):
     data = Database.TEMPLATE.copy()
 
     data["pk"] = pk
-    data["date_add"] = data_add
+    data["date_add"] = date_add
     data["penulis"] = penulis + Database.TEMPLATE["penulis"][len(penulis):]
     data["judul"] = judul + Database.TEMPLATE["judul"][len(judul):]
     data["tahun"] = str(tahun)
