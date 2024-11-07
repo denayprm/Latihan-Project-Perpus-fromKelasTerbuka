@@ -34,7 +34,7 @@ if __name__ == "__main__":
             case "1":
                 CRUD.read_console()
             case "2":
-                print("2. Create Data")
+                CRUD.create_console()
             case "3":
                 print("3. Update Data")
             case "4":
