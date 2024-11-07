@@ -48,11 +48,16 @@ def update_console():
             case _:
                 print("Index tidak cocok, silahkan coba lagi")
 
-        is_done = input("Apakah Selesai (y/n)?")
+        print("Data baru anda")
+        print(f"1. Judul\t: {judul:.40}")
+        print(f"2. Penulis\t: {penulis:.40}")
+        print(f"3. Tahun\t: {tahun:4}")
+
+        is_done = input("Apakah Data Udah sesuai(y/n)?")
         if is_done == "y" or is_done == "Y":
             break
 
-    Operasi.update(no_buku, date_add, tahun, judul, penulis)
+    Operasi.update(no_buku, pk, date_add, tahun, judul, penulis)
     #print(f"{index+1:4} | {judul:.40} | {penulis:.40} | {tahun:4}", end="")
 
 def create_console():

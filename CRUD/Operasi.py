@@ -2,7 +2,7 @@ from . import Database
 from .Util import random_string
 import time
 
-def update(no_buku, date_add, tahun, judul, penulis):
+def update(no_buku, pk, date_add, tahun, judul, penulis):
     data = Database.TEMPLATE.copy()
 
     data["pk"] = pk
