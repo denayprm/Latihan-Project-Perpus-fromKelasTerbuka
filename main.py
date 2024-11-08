@@ -38,7 +38,7 @@ if __name__ == "__main__":
             case "3":
                 CRUD.update_console()
             case "4":
-                print("4. Delete Data")
+                CRUD.delete_console()
 
         is_done = input("Apakah Selesai (y/n)?")
         if is_done == "y" or is_done == "Y":
