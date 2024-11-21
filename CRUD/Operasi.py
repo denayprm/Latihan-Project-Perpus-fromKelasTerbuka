@@ -5,7 +5,6 @@ import time
 import os
 
 def delete(no_buku):
-    print(Database.DB_NAME)
     try:
         with open(Database.DB_NAME,'r') as file:
             counter = 0
@@ -20,9 +19,9 @@ def delete(no_buku):
                         temp_file.write(content)
                 counter += 1
     except:
-        print("database error")
+        print("Database error")
 
-    os.rename("data_temp.txt",Database.DB_NAME)
+    #os.rename(temp_file, Database.DB_NAME)
 
 
 def update(no_buku, pk, date_add, tahun, judul, penulis):
